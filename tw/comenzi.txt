@@ -1,0 +1,94 @@
+//CADRE
+
+<html>
+<head>
+<title>Filme </title>
+</head>
+<frameset cols ="20%,80%" bordercolor ="red" frameborder ="yes" framespacing ="10" border ="10">
+<frame src="exemplu_cadru1.html">
+<frame src="exemplu_cadru2.html">
+</frameset>
+</html>
+
+
+//BUTON TOP
+<script>
+
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+
+//CULOARE SI MENIU 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movie Rental</title>
+</head>
+<body style="background-color:#000543;">
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+<li><a href="#kidzone">Kid Zone</a></li>
+  <li><a href="#whishlist">Wishlist</a></li>  
+<li><a href="#filme">Filme</a></li>
+  <li><a href="#seriale">Seriale</a></li>
+  <li><a class="active" href="#home">Home</a></li>
+ <li><a href="#signin">Sign In</a></li>
+</ul>
+
+
+
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+
+//LINK IN ALT CADRU
+<A href="URL" target="nume_frame"> </A>
